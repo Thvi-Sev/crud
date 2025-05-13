@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.bayon-regular {
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1, h2 {
+    color: #444;
+}
+
+ul li{
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/* Left side box */
+.big-box {
+    position: fixed;
+    background: red;
+    width: 20vw;
+    min-height: 100vh;
+   
+    font-size: 24px;
+    padding: 7px 20px;
+    color: white;
+  
+}
+.big-box h5{
+    font-size: 20px;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 25px;
+}
+.big-box .box1 img {
+    width: 80px;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box1{
+    margin-bottom: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    filter: brightness(1.2);
+}
+
+li {
+    margin-top: 10px;
+}
+
+.big-box li:hover {
+    background: white;
+    color: #f05462;
+}
+
+/* Main container */
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1eeee;
+    
+}
+
+.container .header {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px  4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .nav .search {
+    flex: 3;
+}
+
+.container .header .nav .search input[type="text"] {
+    border: none;
+    background: #f1eeee;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 15px;
+    transition: width 0.3s ease;
+}
+
+.container .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url('search.png') no-repeat;
+}
+
+.search input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.user .btn {
+    background-color: #2109f7;
+    color: rgb(233, 232, 237);
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.user .btn:hover {
+    background-color: #d94353;
+    color: rgb(231, 227, 227);
+}
+
+/* Content */
+.container .content {
+    position: relative;
+    margin-top: 1vh;
+    min-height: 90vh;
+   
+}
+
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card .box h1{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.container .content .cards .card .icon-case img{
+    width: 180px;
+    height: 100px;
+    font-size: 20px;
+    color: #444;
+    object-fit: cover;
+}
+p {
+    font-family: "Khmer", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f05462;
+
+}
+
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    background: #f1eeee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(232, 2, 201, 0.2);
+}
+
+/* Content2 section */
+.container .content2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container .content2 .recent-payments {
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(232, 2, 201, 0.2);
+}
+.container .content2 .recent-payments .card {
+    width: 98%;
+    height: 50px;
+    margin: 10px;
+    background: #f1eeee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(232, 2, 201, 0.2);
+}
+.container .content2 .recent-payments .card .box{
+    align-items: center;
+    display: flex;
+}
+
+.container .content2 .recent-payments .card .box h1{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.container .content2 .recent-payments .card .box .user{
+    flex: 3;
+    margin-left: 80%;
+    margin-top: 4px;
+}
+tr th{
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2109f7;
+}
+
+.modal-body{
+    font-family: "Bayon", sans-serif;
+    color: #5461f0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.modal-title{
+    font-family: "Bayon", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 10px;
+
+}
+
+.text-center{
+    font-family: "Bayon", sans-serif;
+    font-size: 15px;
+}
